@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de alunos</title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,200;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="form">
+        <h1>Cadastro de alunos</h1>
+        <p>Preencha abaixo os campos para cadastrar novo aluno</p>  
+        <form id="campos" method="get">
+            <label class="item" for="nome">Nome do aluno*:
+            <input id="nome" type="text" placeholder="Nome completo" required>
+            </label>
+            <label class="item" for="telefone">Telefone:
+            <input id="telefone" type="tel" placeholder="(51) 999-999-999" pattern="[0-9]{2} -[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            </label>
+            <label class="item" for="nascimento">Data de nascimento:
+            <input id="nasc" type="date">
+            </label>
+            <label class="item" for="notaFinal">Nota final do curso*:
+            <input id="nota" type="number" min="0" max="100" required placeholder="valor inteiro de 0 a 100">
+            </label>
+            <div>
+                <input type="button" class="btn" value="Enviar" onclick="enviarDados()">
+                <input type="reset" class="btn" value="Redefinir">
+            </div>
+            <span>* campos obrigatórios</span>
+        </form>
+    </section>
+    
+    <section class="resultado">
+        <div class="res-cabecalho">
+            <p>ID Aluno</p>
+            <ul class="res-item numAluno"></ul>
+        </div>
+        <div class="res-cabecalho">
+            <p>Nome do aluno</p>
+            <ul class="res-item nomeEnviado"></ul>
+        </div>
+        <div class="res-cabecalho">
+            <p>Telefone</p>
+            <ul class="res-item telEnviado"></ul>
+        </div>
+        <div class="res-cabecalho">
+            <p>Data de nascimento</p>
+            <ul class="res-item nascEnviado"></ul>
+        </div>
+        <div class="res-cabecalho">
+            <p>Nota final</p>
+            <ul class="res-item notaEnviada"></ul>
+        </div>
+    </section>
+    <script src="assets/script.js"></script>
+</body>
+</html>
