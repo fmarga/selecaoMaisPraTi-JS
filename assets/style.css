@@ -39,14 +39,14 @@ span {
   text-align: start;
 }
 
-input {
+#inscricao input {
   line-height: 1.2em;
   padding: 5px;
   width: 300px;
 }
 
-.btn {
-  margin: 10px;
+#inscricao .btn {
+  margin: 10px 3px;
   width: 100px;
   background-color: #5b94c2;
   border: 1px solid #5b94c2;
@@ -55,7 +55,7 @@ input {
   font-weight: 600;
 }
 
-.btn:hover {
+#inscricao .btn:hover {
   transition: 0.3s ease-in-out;
   background-color: #375975;
   cursor: pointer;
@@ -85,24 +85,4 @@ input {
   background-color: #dbe6ee;
   color: #424649;
   list-style: none;
-}
-
-.btn-res {
-  display: block;
-  width: 200px;
-  margin-top: 1px;
-  padding: 0 100px;
-  text-align: center;
-  line-height: 2em;
-  font-weight: 600;
-  font-style: italic;
-  background-color: #dbe6ee;
-  color: #424649;
-  border: 1px solid #375975;
-}
-
-.btn-res:hover {
-  background-color: #375975;
-  color: #dbe6ee;
-  cursor: pointer;
 }

@@ -14,7 +14,7 @@
     <section class="form">
         <h1>Cadastro de alunos</h1>
         <p>Preencha abaixo os campos para cadastrar novo aluno</p>  
-        <form id="campos" method="get">
+        <form id="inscricao" name="inscricao">
             <label class="item" for="nome">Nome do aluno*:
             <input id="nome" type="text" placeholder="Nome completo" required>
             </label>
@@ -30,6 +30,7 @@
             <div>
                 <input type="button" class="btn" value="Enviar" onclick="enviarDados()">
                 <input type="reset" class="btn" value="Redefinir">
+                <input type="button" class="btn" value="Excluir aluno" onclick="removerAluno()">
             </div>
             <span>* campos obrigatórios</span>
         </form>
