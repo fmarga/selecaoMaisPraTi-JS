@@ -8,7 +8,7 @@ function enviarDados() {
     const nota = Math.round(document.getElementById("nota").value);
 
     if(nota <= 100 && nota > 0 && nome !== "") {
-        //alert('Aluno cadastrado');
+        alert('Aluno cadastrado');
         //cria um objeto com os campos anteriores
         let aluno = {};
         aluno.nome = nome;
